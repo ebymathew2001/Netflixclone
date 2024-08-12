@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+body{
+
+    background: #000;
+    color: #fff;
+
+}
+
+.header{
+    width:100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+    margin-top: 5px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space_between;
+    padding: 10px 0;
+}
+
+.logo{
+    width:150px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color:#fff;
+    padding: 7px 20px;
+    font-size: 13px;
+    border-radius: 4px;
+    margin-left: 100 px;
+    cursor: pointer;
+    
+}
+.button-container{
+    display: flex;
+}
+
+.button1{
+   
+    font-size: 15px;
+    width: 130px;
+    margin-left: 800px;  
+}
+
+.icon-container{
+      display: flex; 
+      align-items: center; 
+      margin-left: 10px;
+      transform: translateX(-10px); 
+}
+.button2{  
+   margin-left:15px;
+}
+
+.language-btn{
+    display:inline-flex;
+    align-items: center ;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4); 
+    padding: 7px 10px;
+}
+.language-btn img
+   {
+    width: 10px;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+
+.header-content
+{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+.header-content h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width:650px;
+
+}
+.header-content h3{
+    font-weight:400;
+    margin-bottom:20px;
+
+}
+
+.email-signup{
+    display: flex;
+    width: auto;
+    
+    flex: 1 1 auto;
+    
+}
+
+.email-signup input{
+    background-color: transparent;
+    flex: 1;
+    border-color: white;
+    outline: 0;
+    margin-left: 20px;
+    display: block; 
+    height:50px;
+    font-size: 16px;
+     
+}
+.email-signup input::placeholder{
+    
+    margin-left: 100px;
+    width:145px;
+}
+
+.email-signup button{
+    width: 190px;
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 23px;
+    height: 52px;
+    cursor: pointer;
+    padding: 15px;
+    margin-left: 13px;
+    border-radius: 5px;
+}
+.aroow{
+    margin-top:-25px;
+    margin-left: 140px;
+}
+
+.aroow2{
+    margin-top:-25px;
+    margin-left: 140px;
+}
+.features{  
+    padding: 50px 12%;
+    font-size: 20px; 
+    width: 100%;
+}
+
+
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:50px 0;
+
+}
+
+.text-col{
+    flex-basis: 50%;
+    margin-bottom:20px;
+
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom:20px;
+
+
+}
+
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.features h2{
+    font-size:50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.faq h2{
+    font-weight:500;
+    font-size: 40px;
+}
+
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width:100 px ;
+   
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 10px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label +.content{
+    max-height: 600px;
+    padding: 30px 20px;
+
+}
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+
+.faq .email-signup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+
+}
+.faq samll{
+    font-size: 13px;
+    
+}
+
+
+.footer{
+    padding: 50px 0 10px;
+    border-top:6px solid #333 ;
+    color: #777;
+    width:100%;
+    box-sizing: border-box;
+    margin-left: 0;
+}
+
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+
+    margin-bottom: 10px;
+    margin-left:150px;
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+.footer .col{
+    flex: 1;
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    margin-left: -100px;
+    width: 25%;
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+.footer .col1{
+    flex: 1;
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    margin-left: 150px;
+    width: 25%;
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+.footer .col1 a{
+    flex:1;
+    display:block;
+    text-decoration: underline;
+    color: #777;   
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.footer .col a{
+    flex:1;
+    display:block;
+    text-decoration: underline;
+    color: #777;   
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer .row{
+
+     display:flex; 
+     justify-content: space-between; /* Adds space between columns */
+     align-items: flex-start; /* Aligns items to the top */
+     align-items:flex-start;
+     padding: 10px 0;
+     width:100%;
+     color: rgba(255, 255, 255, 0.7);
+
+}
+
+
+.footer .language-btn{
+    color: #fff;
+    padding: 10px 20px;
+    
+}
+.copyright-txt{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.custom-line { 
+    border: none;            
+    border-top: 8px solid  rgb(35, 35, 35);  
+    margin: 0;                
+    width: 100%;                
+    box-sizing: border-box;  
+}
+.button-container5{
+    margin-left: 150px;
+    display:inline-flex;
+    align-items: center ;
+    background: transparent;
+    font-size: 16px;
+    width:130px;
+    border: 1px solid rgba(255, 255, 255, 0.4); 
+    padding: 7px 10px;
+    color: #fff;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.button-container5 img {
+    margin-left:15px;
+    width:13px;   
+}
+
+.copyright-txt{  
+    margin-left: 150px;
+    color: white;
+}
+
+
+
+
+
+
+
+
